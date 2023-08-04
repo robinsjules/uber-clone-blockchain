@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import avatar from '../temp/avatar.jpeg'
 import { BsPerson } from 'react-icons/bs'
-
+import ridechainlogo from '../assets/ridechainlogo.png'
 
 const style = {
-  wrapper: `h-16 w-full bg-[#18181b] text-white flex md:justify-around items-center px-60 fixed z-20`,
+  wrapper: `h-16 w-full bg-[#701a75] text-white flex md:justify-around items-center px-60 fixed z-20`,
   leftMenu: `flex gap-3`,
-  logo: `text-3xl text-white flex cursor-pointer mr-16`,
+  logo: `h-1000 w-1000 mr-16 cursor-pointer`,
   menuItem: `text-lg text-white font-medium flex items-center mx-4 cursor-pointer`,
   rightMenu: `flex gap-3 items-center`,
   userImageContainer: `mr-2`,
@@ -22,7 +22,9 @@ const Navbar = () => {
   return (
     <div className={style.wrapper}>
       <div className={style.leftMenu}>
-        <div className={style.logo}>RideChain</div>
+        <div className={style.logo}>
+            <Image className = {style.logo} src = {ridechainlogo} width = {100} height ={100}/>
+          </div>
         <div className={style.menuItem}>Ride</div>
         <div className={style.menuItem}>Drive</div>
         <div className={style.menuItem}>More</div>
