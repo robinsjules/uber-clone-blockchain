@@ -11,7 +11,7 @@ const style = {
 mapboxgl.accessToken = 'pk.eyJ1Ijoicm9iaW5zanVsZXMiLCJhIjoiY2xrd2hpODJ0MTFwcTNybXkyN2p4NmRnaSJ9.ygZSZoc2b_oIDaxoXjMPiw'
 
 const Map = () => {
-    const { pickupCoordinates, dropoffCoordinates } = useContext(rcContext)
+    // const { pickupCoordinates, dropoffCoordinates } = useContext(rcContext)
     useEffect(() => {
         const map = new mapboxgl.Map({
             container: 'map',
@@ -20,7 +20,7 @@ const Map = () => {
             zoom: 3,
         })
 
-        if (pickupCoordinates) {
+        /*f (pickupCoordinates) {
             addToMap(map, pickupCoordinates)
           }
       
@@ -33,13 +33,13 @@ const Map = () => {
               padding: 400,
             })
           }
-    }, [pickupCoordinates, dropoffCoordinates])
+    }, [pickupCoordinates, dropoffCoordinates])*/
 
     const addToMap = (map, coordinates) => {
         const marker1 = new mapboxgl.Marker().setLngLat(coordinates).addTo(map)
     }
 
     return <div id ='map' className = {style.wrapper}>Map</div>
-}
+})}
 
 export default Map
