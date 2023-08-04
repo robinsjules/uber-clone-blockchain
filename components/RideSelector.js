@@ -3,6 +3,7 @@ import rcxl from '../assets/vehicles/rcxl.png'
 import rcbike from '../assets/vehicles/rcbike.png'
 import ethLogo from '../assets/ethLogo.png'
 import Image from 'next/image'
+import { useEffect, useState } from 'react'
 
 const style = {
     wrapper: `h-full flex flex-col`,
@@ -39,41 +40,49 @@ const vehicleList = [
 const basePrice = 12345
 
 const RideSelector = () => {
-  return (
-    <div className = {style.wrapper}>
-        <div className = {style.title}>Choose a vehicle</div>
-        <div className = {style.vehicleList}>
-            {vehicleList.map((vehicle, index) => (
-                <div className = {style.vehicle}>
-                    <Image
-                        src = {vehicle.icon}
-                        className = {style.vehicleImage}
-                        height = {60}
-                        width = {60}
-                    />
-                <div className = {style.vehicleDetails}>
-                    <div className = {style.vehicleOpt}>
-                        {vehicle.vehicleOpt}
+    const [vehicleList, setvehicleList] = useState([])
+    /*useEffect(() =>{ 
+        ;( async () => {
+            try{
+                const response = await fetch('/api/db/getRideTypes')
+            }
+        })
+    })*/
+    return (
+        <div className = {style.wrapper}>
+            <div className = {style.title}>Choose a vehicle</div>
+            <div className = {style.vehicleList}>
+                {vehicleList.map((vehicle, index) => (
+                    <div key = {index} className = {style.vehicle}>
+                        <Image
+                            src = {vehicle.icon}
+                            className = {style.vehicleImage}
+                            height = {60}
+                            width = {60}
+                        />
+                    <div className = {style.vehicleDetails}>
+                        <div className = {style.vehicleOpt}>
+                            {vehicle.vehicleOpt}
+                        </div>
+                        <div className = {style.time}>
+                            5 mins away
+                        </div>
                     </div>
-                    <div className = {style.time}>
-                        5 mins away
+                    <div className = {style.priceContainer}>
+                        <div className = {style.price}>
+                            {((basePrice / 10 ** 5) * vehicle.priceMultiplier).toFixed(5)}
+                        </div>
+                        <Image
+                            src = {ethLogo}
+                            width = {20}
+                            height = {40}
+                        />
                     </div>
-                </div>
-                <div className = {style.priceContainer}>
-                    <div className = {style.price}>
-                        {((basePrice / 10 ** 5) * vehicle.priceMultiplier).toFixed(5)}
                     </div>
-                    <Image
-                        src = {ethLogo}
-                        width = {20}
-                        height = {40}
-                    />
-                </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default RideSelector
