@@ -4,16 +4,16 @@ import { useEffect } from 'react'
 import mapboxgl from 'mapbox-gl'
 
 const style = {
-    wrapper:'flex-1 h-full w-full'
+    wrapper:'flex-1 h-full w-full',
 }
 
-mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN
+mapboxgl.accessToken = 'pk.eyJ1Ijoicm9iaW5zanVsZXMiLCJhIjoiY2xrd2hpODJ0MTFwcTNybXkyN2p4NmRnaSJ9.ygZSZoc2b_oIDaxoXjMPiw'
 
 const Map = () => {
     useEffect(() => {
         const map = new mapboxgl.Map({
             container: 'map',
-            style: 'mapbox://styles/drakosi/ckvcwq3rwdw4314o3i2ho8tph',
+            style: 'mapbox://styles/mapbox/streets-v12',
             center: [-99.29011, 39.9172],
             zoom: 3,
         })
