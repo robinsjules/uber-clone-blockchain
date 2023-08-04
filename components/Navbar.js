@@ -4,7 +4,7 @@ import { BsPerson } from 'react-icons/bs'
 
 
 const style = {
-  wrapper: `h-16 w-full bg-black text-white flex md:justify-around items-center px-60 fixed z-20`,
+  wrapper: `h-16 w-full bg-[#18181b] text-white flex md:justify-around items-center px-60 fixed z-20`,
   leftMenu: `flex gap-3`,
   logo: `text-3xl text-white flex cursor-pointer mr-16`,
   menuItem: `text-lg text-white font-medium flex items-center mx-4 cursor-pointer`,
