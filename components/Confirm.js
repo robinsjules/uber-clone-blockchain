@@ -1,5 +1,7 @@
 "use client";
 
+import RideSelector from './RideSelector'
+
 const style = {
     wrapper: `flex-1 h-full flex flex-col justify-between`,
     rideSelectorContainer: `h-full flex flex-col overflow-scroll`,
@@ -11,7 +13,9 @@ const Confirm = () => {
     const storeTripDetails = async() => {}
     return (
         <div className = {style.wrapper}>
-            <div className = {style.rideSelectorContainer}></div>
+            <div className = {style.rideSelectorContainer}>
+                <RideSelector />
+            </div>
             <div className = {style.confirmButtonContainer}>
                 <div className = {style.confirmButton}>
                     <div className = {style.confirmButton} onClick={() => storeTripDetails()}>
