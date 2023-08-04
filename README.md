@@ -1,4 +1,4 @@
-<p align ="center"><img src = "https://github.com/robinsjules/uber-clone-blockchain/assets/111500254/a7bdbbb9-3169-4803-9711-c3a929e28b3e" alt = "Ride Chain Logo" width = 100 height = 100></p>
+<p align ="center"><img src = "assets/RCLogo-forReadMe.png" alt = "Ride Chain Logo" width = 100 height = 100></p>
 
 Ride Chain is a decentralised ride-sharing web application that uses blockchain technology to subtract the intermidiary fees in contemporary ride-hailing applications. It is built mainly on Next.js and will be deployed using Vercel.
 
