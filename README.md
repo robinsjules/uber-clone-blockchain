@@ -1,34 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align ="center"><img src = "https://github.com/robinsjules/uber-clone-blockchain/assets/111500254/a7bdbbb9-3169-4803-9711-c3a929e28b3e" alt = "Ride Chain Logo" width = 100 height = 100></p>
 
-## Getting Started
+Ride Chain is a decentralised ride-sharing web application that uses blockchain technology to subtract the intermidiary fees in contemporary ride-hailing applications. It is built mainly on Next.js and will be deployed using Vercel.
 
-First, run the development server:
+## Features
+- <b>Authentication:</b> Users must login using their MetaMask addres (TBC)
+- <b>Location search:</b> Riders can search for their pick-up and drop-off point
+- <b>Vehicle options:</b> Riders are able to select rides from 3 choices: Standard, XL, and Bike to meet their individual needs
+- <b>Payment:</b> Payment is in Ethereum and directly deducted from one's MetaMask wallet (TBC)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Currently, not all features have been implemented, and the project is mainly focused on the frontend aspect.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
+To deploy the project locally, make sure to open the project folder and type 'vercel dev' in the terminal. Open [localhost://3000 ](http://localhost:3000) using your browser to see the project.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*Note: This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Project was done with reference to [this YouTube video](https://www.youtube.com/watch?v=w6N4JxqsOFA&t=258s).
