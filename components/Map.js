@@ -19,6 +19,7 @@ const Map = () => {
             center: [-73.990593, 40.740121],
             zoom: 3,
         })
+      },[])
 
         /*f (pickupCoordinates) {
             addToMap(map, pickupCoordinates)
@@ -40,6 +41,6 @@ const Map = () => {
     }
 
     return <div id ='map' className = {style.wrapper}>Map</div>
-})}
+}
 
 export default Map
