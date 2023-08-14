@@ -5,7 +5,7 @@ module.exports = {
   solidity: "0.8.19",
   paths: {
     artifacts: './componenets/artifacts',
-  }
+  },
   networks: {
     hardhat: {
       chainId: 1337,
