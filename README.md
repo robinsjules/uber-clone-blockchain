@@ -13,4 +13,4 @@ Currently, not all features have been implemented, and the project is mainly foc
 ## Deployment
 To deploy the project locally, make sure to open the project folder and type 'vercel dev' in the terminal. Open [localhost://3000 ](http://localhost:3000) using your browser to see the project.
 
-*Note: This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app). Project was done with reference to [this YouTube video](https://www.youtube.com/watch?v=w6N4JxqsOFA&t=258s).
+*Note: Project was done with reference to [this YouTube video](https://www.youtube.com/watch?v=w6N4JxqsOFA&t=258s). Additional Solidity smart contracts are in development and will be uploaded soon! :)

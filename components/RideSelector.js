@@ -40,8 +40,8 @@ const vehicleList = [
 const basePrice = 12345
 
 const RideSelector = () => {
-    const [vehicleList, setvehicleList] = useState([])
-    /*useEffect(() =>{ 
+    /*const [vehicleList, setvehicleList] = useState([])
+    useEffect(() =>{ 
         ;( async () => {
             try{
                 const response = await fetch('/api/db/getRideTypes')
